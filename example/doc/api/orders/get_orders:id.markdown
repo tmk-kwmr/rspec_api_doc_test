@@ -1,6 +1,6 @@
 # Orders API
 
-## get_order_id
+## GET /orders/:id
 
 ### GET /orders/:id
 ### Request
@@ -32,10 +32,10 @@ Cookie: </pre>
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-ETag: &quot;e9e19c4b125fcd47056e7abc3d8ebef3&quot;
+ETag: &quot;f7dea916698fd23f02cce80b0800e3fd&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 274b8183-1ef8-42f8-b52f-bb0e0a6e2aff
-X-Runtime: 0.002083
+X-Request-Id: 1f05ffad-3362-4fba-b1c9-466161bf64b9
+X-Runtime: 0.012819
 Content-Length: 146</pre>
 
 #### Status
@@ -44,4 +44,4 @@ Content-Length: 146</pre>
 
 #### Body
 
-<pre>{"id":1,"name":"Old Name","paid":true,"email":"email@example.com","created_at":"2014-09-08T09:19:40.179Z","updated_at":"2014-09-08T09:19:40.179Z"}</pre>
+<pre>{"id":1,"name":"Old Name","paid":true,"email":"email@example.com","created_at":"2014-09-08T09:23:19.475Z","updated_at":"2014-09-08T09:23:19.475Z"}</pre>

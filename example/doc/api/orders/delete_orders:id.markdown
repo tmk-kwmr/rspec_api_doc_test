@@ -1,6 +1,6 @@
 # Orders API
 
-## delete_order_id
+## DELETE /orders/:id
 
 ### DELETE /orders/:id
 ### Request
@@ -32,8 +32,8 @@ Cookie: </pre>
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 Cache-Control: no-cache
-X-Request-Id: 135a62e9-81fd-4c4a-9ec9-219e098f5836
-X-Runtime: 0.002693</pre>
+X-Request-Id: 17940680-db5f-4c73-8c5f-9dcdf9f0d6e0
+X-Runtime: 0.002835</pre>
 
 #### Status
 

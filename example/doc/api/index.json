@@ -4,33 +4,28 @@
       "name": "Orders",
       "examples": [
         {
-          "description": "Getting the headers",
-          "link": "orders/getting_the_headers.json",
+          "description": "DELETE /orders/:id",
+          "link": "orders/delete_orders:id.json",
           "groups": "all"
         },
         {
-          "description": "delete_order_id",
-          "link": "orders/delete_order_id.json",
-          "groups": "all"
-        },
-        {
-          "description": "get_order_id",
-          "link": "orders/get_order_id.json",
-          "groups": "all"
-        },
-        {
-          "description": "get_orders",
+          "description": "GET /orders",
           "link": "orders/get_orders.json",
           "groups": "all"
         },
         {
-          "description": "post_order",
-          "link": "orders/post_order.json",
+          "description": "GET /orders/:id",
+          "link": "orders/get_orders:id.json",
           "groups": "all"
         },
         {
-          "description": "put_order_id",
-          "link": "orders/put_order_id.json",
+          "description": "POST /orders",
+          "link": "orders/post_orders.json",
+          "groups": "all"
+        },
+        {
+          "description": "PUT /orders/:id",
+          "link": "orders/put_orders:id.json",
           "groups": "all"
         }
       ]

@@ -1,6 +1,6 @@
 # Orders API
 
-## post_order
+## POST /orders
 
 ### POST /orders
 
@@ -63,10 +63,10 @@ X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 Location: http://example.org/orders/1
 Content-Type: application/json; charset=utf-8
-ETag: &quot;2edbd738d82bfec0baf8cd568088c562&quot;
+ETag: &quot;5c0e2693e8c687d2a67861f42f3b886c&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 9a10f58f-8a8a-4948-b4e6-db16b8b3f2cb
-X-Runtime: 0.004720
+X-Request-Id: 7cdb7328-8eea-44ed-a4a1-d777947e308b
+X-Runtime: 0.004846
 Content-Length: 145</pre>
 
 #### Status
@@ -75,7 +75,7 @@ Content-Length: 145</pre>
 
 #### Body
 
-<pre>{"id":1,"name":"Order 1","paid":true,"email":"email@example.com","created_at":"2014-09-08T09:19:40.159Z","updated_at":"2014-09-08T09:19:40.159Z"}</pre>
+<pre>{"id":1,"name":"Order 1","paid":true,"email":"email@example.com","created_at":"2014-09-08T09:23:19.529Z","updated_at":"2014-09-08T09:23:19.529Z"}</pre>
 ### Request
 
 #### Headers
@@ -105,10 +105,10 @@ Cookie: </pre>
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-ETag: &quot;2edbd738d82bfec0baf8cd568088c562&quot;
+ETag: &quot;5c0e2693e8c687d2a67861f42f3b886c&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 94657678-9353-47c0-94d6-c606b9323b89
-X-Runtime: 0.004221
+X-Request-Id: 3a8f7c72-0e02-472a-932a-a6e69199ad76
+X-Runtime: 0.002272
 Content-Length: 145</pre>
 
 #### Status
@@ -117,4 +117,4 @@ Content-Length: 145</pre>
 
 #### Body
 
-<pre>{"id":1,"name":"Order 1","paid":true,"email":"email@example.com","created_at":"2014-09-08T09:19:40.159Z","updated_at":"2014-09-08T09:19:40.159Z"}</pre>
+<pre>{"id":1,"name":"Order 1","paid":true,"email":"email@example.com","created_at":"2014-09-08T09:23:19.529Z","updated_at":"2014-09-08T09:23:19.529Z"}</pre>

@@ -1,0 +1,109 @@
+{
+  "resource": "Orders",
+  "http_method": "POST",
+  "route": "/orders",
+  "description": "Creating an order",
+  "explanation": "First, create an order, then make a later request to get it back",
+  "parameters": [
+    {
+      "required": true,
+      "scope": "order",
+      "name": "name",
+      "description": "Name of order"
+    },
+    {
+      "required": true,
+      "scope": "order",
+      "name": "paid",
+      "description": "If the order has been paid for"
+    },
+    {
+      "scope": "order",
+      "name": "email",
+      "description": "Email of user that placed the order"
+    }
+  ],
+  "response_fields": [
+    {
+      "scope": "order",
+      "Type": "String",
+      "name": "name",
+      "description": "Name of order"
+    },
+    {
+      "scope": "order",
+      "Type": "Boolean",
+      "name": "paid",
+      "description": "If the order has been paid for"
+    },
+    {
+      "scope": "order",
+      "Type": "String",
+      "name": "email",
+      "description": "Email of user that placed the order"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/orders",
+      "request_body": "{\"order\":{\"name\":\"Order 1\",\"paid\":true,\"email\":\"email@example.com\"}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\"id\":1,\"name\":\"Order 1\",\"paid\":true,\"email\":\"email@example.com\",\"created_at\":\"2014-09-08T07:24:10.361Z\",\"updated_at\":\"2014-09-08T07:24:10.361Z\"}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Location": "http://example.org/orders/1",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"7e8fc343bf02373dfc96e21a0fbf7e1f\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "06d6e826-c978-42d2-ad78-eb617ebd2f98",
+        "X-Runtime": "0.005654",
+        "Content-Length": "145"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/orders\" -d '{\"order\":{\"name\":\"Order 1\",\"paid\":true,\"email\":\"email@example.com\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    },
+    {
+      "request_method": "GET",
+      "request_path": "/orders/1",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"id\":1,\"name\":\"Order 1\",\"paid\":true,\"email\":\"email@example.com\",\"created_at\":\"2014-09-08T07:24:10.361Z\",\"updated_at\":\"2014-09-08T07:24:10.361Z\"}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"7e8fc343bf02373dfc96e21a0fbf7e1f\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "69e06c2d-7ef9-47ea-b91b-9724af9a418e",
+        "X-Runtime": "0.003134",
+        "Content-Length": "145"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/orders/1\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

@@ -29,6 +29,7 @@ resource "Orders" do
     end
   end
 
+  # create
   post "/orders" do
     parameter :name, "Name of order", :required => true, :scope => :order
     parameter :paid, "If the order has been paid for", :required => true, :scope => :order
@@ -55,9 +56,17 @@ resource "Orders" do
       })
       expect(status).to eq(201)
 
+      expect(order.except("id", "created_at", "updated_at")).to eq({
+        "name" => name,
+        "paid" => paid,
+        "email" => email,
+      })
+      expect(status).to eq(201)
+
       client.get(URI.parse(response_headers["location"]).path, {}, headers)
       expect(status).to eq(200)
     end
+
   end
 
   get "/orders/:id" do

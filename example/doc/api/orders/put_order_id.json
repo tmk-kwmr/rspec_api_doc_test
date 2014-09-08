@@ -2,7 +2,7 @@
   "resource": "Orders",
   "http_method": "PUT",
   "route": "/orders/:id",
-  "description": "Updating an order",
+  "description": "put_order_id",
   "explanation": null,
   "parameters": [
     {
@@ -46,8 +46,8 @@
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "d0802a4e-dbba-4f32-928b-6d06aba1abbd",
-        "X-Runtime": "0.016966"
+        "X-Request-Id": "9e59b1a2-7783-4d67-a7de-d672e70b9fbb",
+        "X-Runtime": "0.004423"
       },
       "response_content_type": null,
       "curl": "curl \"http://localhost:3000/orders/1\" -d '{\"order\":{\"name\":\"Updated Name\"}}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

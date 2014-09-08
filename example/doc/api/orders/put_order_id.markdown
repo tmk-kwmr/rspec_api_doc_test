@@ -1,6 +1,6 @@
 # Orders API
 
-## Updating an order
+## put_order_id
 
 ### PUT /orders/:id
 
@@ -48,8 +48,8 @@ Cookie: </pre>
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 Cache-Control: no-cache
-X-Request-Id: d0802a4e-dbba-4f32-928b-6d06aba1abbd
-X-Runtime: 0.016966</pre>
+X-Request-Id: 9e59b1a2-7783-4d67-a7de-d672e70b9fbb
+X-Runtime: 0.004423</pre>
 
 #### Status
 

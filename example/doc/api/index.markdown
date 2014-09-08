@@ -2,10 +2,10 @@
 
 ## Orders
 
-* [Creating an order](orders/creating_an_order.markdown)
-* [Deleting an order](orders/deleting_an_order.markdown)
-* [Getting a list of orders](orders/getting_a_list_of_orders.markdown)
-* [Getting a specific order](orders/getting_a_specific_order.markdown)
 * [Getting the headers](orders/getting_the_headers.markdown)
-* [Updating an order](orders/updating_an_order.markdown)
+* [delete_order_id](orders/delete_order_id.markdown)
+* [get_order_id](orders/get_order_id.markdown)
+* [get_orders](orders/get_orders.markdown)
+* [post_order](orders/post_order.markdown)
+* [put_order_id](orders/put_order_id.markdown)
 

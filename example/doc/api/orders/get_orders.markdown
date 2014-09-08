@@ -1,13 +1,13 @@
 # Orders API
 
-## Getting a list of orders
+## get_orders
 
 ### GET /orders
 
 ### Parameters
 
 Name : page
-Description : Current page of orders
+Description : orders一覧
 
 ### Request
 
@@ -42,10 +42,10 @@ Cookie: </pre>
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-ETag: &quot;eaa72af26116acbdc5a277ce2d185d1d&quot;
+ETag: &quot;f751ee8ce29d01df7ae28b209b3c8ac2&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 92bde99a-9951-45d2-8093-4fbdf8c440bc
-X-Runtime: 0.002810
+X-Request-Id: 0a4991c0-6482-4cd6-890a-c25892ac3ee0
+X-Runtime: 0.014214
 Content-Length: 295</pre>
 
 #### Status
@@ -54,4 +54,4 @@ Content-Length: 295</pre>
 
 #### Body
 
-<pre>[{"id":1,"name":"Order 0","paid":true,"email":"email0@example.com","created_at":"2014-09-08T08:45:27.259Z","updated_at":"2014-09-08T08:45:27.259Z"},{"id":2,"name":"Order 1","paid":true,"email":"email1@example.com","created_at":"2014-09-08T08:45:27.260Z","updated_at":"2014-09-08T08:45:27.260Z"}]</pre>
+<pre>[{"id":1,"name":"Order 0","paid":true,"email":"email0@example.com","created_at":"2014-09-08T09:19:40.128Z","updated_at":"2014-09-08T09:19:40.128Z"},{"id":2,"name":"Order 1","paid":true,"email":"email1@example.com","created_at":"2014-09-08T09:19:40.131Z","updated_at":"2014-09-08T09:19:40.131Z"}]</pre>

@@ -1,8 +1,8 @@
 {
   "resource": "Orders",
-  "http_method": "HEAD",
-  "route": "/orders",
-  "description": "Getting the headers",
+  "http_method": "DELETE",
+  "route": "/orders/:id",
+  "description": "delete_order_id",
   "explanation": null,
   "parameters": [
 
@@ -12,8 +12,8 @@
   ],
   "requests": [
     {
-      "request_method": "HEAD",
-      "request_path": "/orders",
+      "request_method": "DELETE",
+      "request_path": "/orders/1",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
@@ -32,11 +32,11 @@
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "8cef7842-1c23-471e-9d03-226384972b75",
-        "X-Runtime": "0.001596"
+        "X-Request-Id": "135a62e9-81fd-4c4a-9ec9-219e098f5836",
+        "X-Runtime": "0.002693"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/orders\" -X HEAD \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://localhost:3000/orders/1\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

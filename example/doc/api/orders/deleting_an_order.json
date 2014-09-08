@@ -32,8 +32,8 @@
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "10a5c645-0f43-4bc9-aaa5-245cc08433cc",
-        "X-Runtime": "0.003588"
+        "X-Request-Id": "d4e8ab4a-55d5-4dbb-978f-dfb23d0f250c",
+        "X-Runtime": "0.002444"
       },
       "response_content_type": null,
       "curl": "curl \"http://localhost:3000/orders/1\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
